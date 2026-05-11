@@ -28,7 +28,13 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!--
+        HERO (primeira parte da página)
+        - id="home" conecta com o menu do topo (href="#home")
+        - Mostra: etiqueta "Novo", título, descrição e botões de chamada (CTAs)
+        - layout em duas colunas: texto + imagem do iPhone (o CSS centraliza e ajusta em telas menores)
+        Observação: não existe JavaScript; a navegação por âncora é feita pelo próprio HTML.
+    -->
     <section id="home" class="hero">
         <div class="hero-content">
             <span class="hero-tag">Novo</span>
@@ -45,7 +51,13 @@
         </div>
     </section>
 
-    <!-- Cores Section -->
+    <!--
+        CORES SECTION
+        - Três cards (branco/azul/laranja)
+        - Cada card contém: glow (efeito de brilho), imagem do iPhone, informações e um “indicador” circular de cor.
+        - O efeito ao passar o mouse (hover) é 100% CSS (transform, box-shadow, glow).
+        - Não há troca real de cor ao clicar porque não existe JavaScript.
+    -->
     <section class="cores-section">
         <div class="container">
             <h2 class="section-title">Escolha sua cor favorita</h2>
@@ -95,7 +107,12 @@
         </div>
     </section>
 
-    <!-- Qualidades Section -->
+    <!--
+        QUALIDADES SECTION
+        - id="qualidades" para o menu do topo.
+        - grid de cards: cada card tem ícone (SVG), título e descrição.
+        - os efeitos (hover) são controlados pelo CSS (.qualidade-card:hover).
+    -->
     <section id="qualidades" class="qualidades">
         <div class="container">
             <h2 class="section-title">Qualidades Excepcionais</h2>
@@ -171,7 +188,11 @@
         </div>
     </section>
 
-    <!-- Specs Banner -->
+    <!--
+        SPECS BANNER (faixa de destaques)
+        - Mostra 4 “stats” em linha (câmera, tela, chip e bateria).
+        - Layout é feito no CSS usando flex (.specs-grid).
+    -->
     <section class="specs-banner">
         <div class="container">
             <div class="specs-grid">
@@ -195,7 +216,12 @@
         </div>
     </section>
 
-    <!-- Benefícios Section -->
+    <!--
+        BENEFÍCIOS SECTION
+        - id="beneficios" usado para o link do menu no topo.
+        - grid com 6 cards numerados (01 a 06).
+        - O número e cores do texto são definidos via CSS (.beneficio-numero e afins).
+    -->
     <section id="beneficios" class="beneficios">
         <div class="container">
             <h2 class="section-title">Por que ter o iPhone 17 Pro Max?</h2>
@@ -241,7 +267,12 @@
         </div>
     </section>
 
-    <!-- Apple Intelligence Section -->
+    <!--
+        APPLE INTELLIGENCE SECTION
+        - seção com layout em “duas colunas” no desktop (texto + imagem)
+        - no mobile vira uma coluna (o CSS muda grid e usa order).
+        - usa a lista com ícone (o “check” é gerado via CSS ::before).
+    -->
     <section class="intelligence">
         <div class="container">
             <div class="intelligence-content">
@@ -262,7 +293,13 @@
         </div>
     </section>
 
-    <!-- Preços Section -->
+    <!--
+        PREÇOS SECTION
+        - id="precos" para o link no menu do topo e para o botão “Comprar Agora”.
+        - contém uma grade com 3 cards de produto (um deles com classe .destaque).
+        - “Trade In” aparece logo abaixo na mesma seção.
+        Observação: os botões “Comprar” e links estão como "#" (sem ação real sem JavaScript/backend).
+    -->
     <section id="precos" class="precos">
         <div class="container">
             <h2 class="section-title">Escolha o seu iPhone 17 Pro Max</h2>
@@ -336,7 +373,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!--
+        FOOTER
+        - usa grade (.footer-grid) para organizar colunas de links.
+        - “footer-bottom” fica numa linha (ou coluna no mobile) com copyright e links legais.
+    -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
